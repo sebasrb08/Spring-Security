@@ -43,7 +43,23 @@ Esta aplicación es una plataforma de gestión de usuarios que utiliza Spring Se
 
 # Uso
 
-Una vez que la aplicación esté en funcionamiento, puedes acceder a la interfaz de usuario para gestionar usuarios, roles y permisos. Utiliza las funcionalidades proporcionadas por la aplicación para agregar, editar o eliminar usuarios, asignar roles a usuarios y definir los permisos asociados a cada rol.
+Puedes utilizar Postman para interactuar con la API de esta aplicación de la siguiente manera:
+
+1.  **Registrar un usuario:** Envía una solicitud POST a la ruta `/auth/sign-in` con un objeto JSON que contenga los datos del nuevo usuario para registrarlo.
+    
+2.  **Iniciar sesión:** Envía una solicitud POST a la ruta `/auth/log-in` con las credenciales de inicio de sesión en el cuerpo de la solicitud en formato JSON. Esto generará un token JWT que deberás usar para las solicitudes posteriores.
+    
+3.  **Acceder a rutas protegidas:**
+    
+    -   **GET "/method/get":** Todos los roles pueden acceder a esta ruta para ver los accesos.
+    -   **POST "/method/post":** Solo los roles ADMIN y DEVELOPER pueden acceder a esta ruta.
+    -   **PUT "/method/put":** Ningun rol puede acceder a esta ruta para realizar una actualización.
+    -   **DELETE "/method/delete":** Ningun rol puede acceder a esta ruta para realizar una actualización.
+    -   **PATCH "/method/patch":** Solo los roles DEVELOPER pueden acceder a esta ruta.
+
+Recuerda incluir el token JWT en el encabezado de autorización de las solicitudes para autenticar y autorizar correctamente.
+
+Si usas Postman usar Bearer token y enviar el token para obtener la autorización
 
 # Contribución
 
