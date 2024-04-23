@@ -19,22 +19,26 @@ Esta aplicación es una plataforma de gestión de usuarios que utiliza Spring Se
 -   **Spring Security:** Módulo de Spring que proporciona autenticación y autorización para aplicaciones Java.
     
 -   **JWT (JSON Web Tokens):** Un estándar abierto (RFC 7519) que define un formato compacto y autónomo para la transmisión de información de forma segura entre partes como un objeto JSON.
+ 
+-   **Spring Data JPA:** Parte del proyecto Spring que proporciona una abstracción de alto nivel para interactuar con bases de datos relacionales utilizando el estándar de mapeo objeto-relacional (ORM) de Java.
     
--   **Base de datos:** La aplicación utiliza una base de datos  MySQL  para almacenar y gestionar la información de usuarios, roles y permisos.
+-   **Validator:** Mecanismo de validación de datos utilizado para garantizar la integridad y la coherencia de los datos ingresados por los usuarios.
+  
+-   **Postman:** Herramienta de colaboración para el desarrollo de API utilizada para interactuar y probar servicios web.
     
+-   **Visual Studio Code:** Editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS, utilizado para escribir y depurar el código de la aplicación.
 
 # Requisitos previos
 
 -   Java JDK 21.0.1 o superior
--   Maven 3.2 o superior
 -   Base de datos MySQL
 -   Visual Studio Code (o cualquier otro editor de código compatible con Java)
 
 # Configuración
 
-1.  Clona el repositorio desde GitHub: `git clone https://github.com/tu-usuario/tu-repositorio.git`
+1.  Clona el repositorio desde GitHub: `git clone https://github.com/sebasrb08/Spring-Security.git`
 2.  Importa el proyecto en tu IDE preferido.
-3.  Configura la conexión a la base de datos en el archivo `application.properties` o `application.yml`.
+3.  Configura la conexión a la base de datos en el archivo `application.properties`.
 4.  Ejecuta la aplicación utilizando Maven o tu IDE.
 
 # Uso
@@ -45,6 +49,3 @@ Una vez que la aplicación esté en funcionamiento, puedes acceder a la interfaz
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna idea para mejorar esta aplicación, no dudes en abrir un issue o enviar una pull request.
 
-# Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT.
