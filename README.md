@@ -9,7 +9,8 @@ Esta aplicación es una plataforma de gestión de usuarios que utiliza Spring Se
 -   **Autorización basada en roles y permisos:** Implementa un sistema de roles y permisos para controlar el acceso a diferentes partes de la aplicación. Los usuarios pueden tener uno o varios roles, y cada rol puede tener uno o varios permisos asociados.
     
 -   **Generación y gestión de JWT:** Utiliza JWT para generar tokens de acceso seguro después de que un usuario se autentica correctamente. Estos tokens se utilizan para autorizar las solicitudes del usuario y acceder a recursos protegidos de la aplicación.
-    
+
+    **Persistencia de datos con Spring Data JPA:** Utiliza Spring Data JPA para interactuar con una base de datos relacional, permitiendo que los usuarios y sus datos se almacenen y recuperen de manera eficiente.
 
 # Tecnologías utilizadas
 
@@ -19,15 +20,15 @@ Esta aplicación es una plataforma de gestión de usuarios que utiliza Spring Se
     
 -   **JWT (JSON Web Tokens):** Un estándar abierto (RFC 7519) que define un formato compacto y autónomo para la transmisión de información de forma segura entre partes como un objeto JSON.
     
--   **Base de datos:** La aplicación utiliza una base de datos (por ejemplo, MySQL, PostgreSQL, etc.) para almacenar y gestionar la información de usuarios, roles y permisos.
+-   **Base de datos:** La aplicación utiliza una base de datos  MySQL  para almacenar y gestionar la información de usuarios, roles y permisos.
     
 
 # Requisitos previos
 
--   Java JDK 8 o superior
+-   Java JDK 21.0.1 o superior
 -   Maven 3.2 o superior
--   Base de datos compatible (por ejemplo, MySQL, PostgreSQL)
--   IDE compatible con Spring Boot (por ejemplo, IntelliJ IDEA, Eclipse)
+-   Base de datos MySQL
+-   Visual Studio Code (o cualquier otro editor de código compatible con Java)
 
 # Configuración
 
